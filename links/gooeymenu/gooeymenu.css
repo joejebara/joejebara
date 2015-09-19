@@ -1,0 +1,75 @@
+body {
+   background: #ecf0f1;
+   color: #444;
+   font-family: Helvetica, sans-serif;
+   background: #efefef;
+}
+.bubbles {
+   display: inline-block;
+   -webkit-filter: url("#goo");
+   filter: url("#goo");
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   margin-left: -50px;
+   margin-top: -50px;
+   width: 380px;
+   height: 0;
+}
+.bubbles a {
+   text-decoration: none;
+   color: #444;
+   position: absolute;
+   outline: none;
+}
+.bubbles a:nth-child(1) {
+   -webkit-transform: translate(0px, 0px);
+   -ms-transform: translate(0px, 0px);
+   transform: translate(0px, 0px);
+}
+.bubbles a:nth-child(2) {
+   -webkit-transform: translate(100px, 0px);
+   -ms-transform: translate(100px, 0px);
+   transform: translate(100px, 0px);
+}
+.bubbles a:nth-child(3) {
+   -webkit-transform: translate(-100px, 0px);
+   -ms-transform: translate(-100px, 0px);
+   transform: translate(-100px, 0px);
+}
+.bubbles a:nth-child(4) {
+   -webkit-transform: translate(0px, -100px);
+   -ms-transform: translate(0px, -100px);
+   transform: translate(0px, -100px);
+}
+.bubbles a:nth-child(5) {
+   -webkit-transform: translate(0px, 100px);
+   -ms-transform: translate(0px, 100px);
+   transform: translate(0px, 100px);
+}
+.bubbles a .bubble {
+   border-radius: 50%;
+   background: #4caf50;
+   font-size: 2em;
+   height: 100px;
+   line-height: 100px;
+   text-align: center;
+   width: 100px;
+   -webkit-transition: 0.3s;
+   transition: 0.3s;
+}
+.bubbles a .bubble:hover {
+   height: 120px;
+   width: 120px;
+   line-height: 120px;
+   cursor: pointer;
+   margin: -10px;
+}
+.bubbles a .bubble:active {
+   height: 120px;
+   width: 120px;
+   line-height: 120px;
+   cursor: pointer;
+   margin: -10px;
+   background: #4caf50;
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
+   <link rel="stylesheet" href="css/style.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="icon" href="img/favicon.ico">
+   <title>Joe Jebara | Front End Developer</title>
+</head>
+
+<body class="body-bio">
+   <!-- loading page -->
+   <div id="loading">
+      <div class="progress">
+         <div class="indeterminate"></div>
+      </div>
+   </div>
+   <!-- loading page -->
+   <!-- container -->
+   <div class="row">
+      <!-- navigation bar -->
+      <div class="div-nav col l1 m2 s3 center-align">
+         <h1 class="my-logo" onclick="Materialize.toast('Welcome Aboard!', 4000)">j j</h1>
+         <a href="index.html" class="waves-effect waves-light btn-large grey darken-4"><i class="material-icons">home</i></a>
+         <a href="#" class="waves-effect waves-light btn-large grey z-depth-5"><i class="material-icons">school</i></a>
+         <a href="lab.html" class="fire waves-effect waves-light btn-large grey darken-4"><i class="material-icons">whatshot</i></a>
+         <a href="contact.html" class="waves-effect waves-light btn-large grey darken-4"><i class="material-icons">email</i></a>
+      </div>
+      <!-- navigation bar -->
+      <!-- div stuff -->
+      <div class="div-stuff col offset-l1 offset-m2 offset-s3 l11 m10 s9">
+         <!-- header -->
+         <h4 class="center-align wow fadeInDown" data-wow-delay="0.6s">j<span class="thin">oe</span> j<span class="thin">ebara</span></h4>
+         <h4 class="center-align wow fadeInUp" data-wow-delay="0.9s">Bio</h4>
+         <!-- header -->
+         <!-- divider -->
+         <div class="divider wow zoomIn" data-wow-delay="2.8s"></div>
+         <!-- divider -->
+         <!-- bio-stuff -->
+         <div class="bio-stuff row">
+            <!-- who am I -->
+            <div class="col offset-l1 l5 offset-m1 m10 whoami wow fadeInUp" data-wow-delay="1.5s">
+               <ul class="collapsible hoverable" data-collapsible="accordion">
+                  <li>
+                     <div class="collapsible-header"><i class="material-icons">expand_more</i>Who am I?
+                     </div>
+                     <div class="collapsible-body">
+                        <p>I am a web developer, mostly "Front End", with a genuine passion for creativity and a strong adaptivity to the latest web trends.</p>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="collapsible-header"><i class="material-icons">expand_more</i>What can I do?</div>
+                     <div class="collapsible-body">
+                        <p>I can build a pretty decent functioning good looking websites.</p>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="collapsible-header"><i class="material-icons">expand_more</i>How can I do it?</div>
+                     <div class="collapsible-body">
+                        <p> Using a fat combination of skills, tools and web technologies.
+                        </p>
+                     </div>
+                  </li>
+               </ul>
+            </div>
+            <!-- who am I -->
+            <!-- pros and cons -->
+            <div class="col l5 offset-m1 m10 proscons wow fadeInRight" data-wow-delay="1.9s">
+               <div class="row hoverable">
+                  <div class="col s12">
+                     <ul class="tabs">
+                        <li class="tab col s3 coco"><a class="active" href="#pros">Pros<i class="li-pros  material-icons">add_circle_outline</i></a></li>
+                        <li class="tab col s3"><a href="#cons">Cons<i class="li-cons material-icons">remove_circle_outline</i></a></li>
+                     </ul>
+                  </div>
+                  <div id="pros" class="col s12">
+                     <ul>
+                        <li>- punctual</li>
+                        <li>- detail oriented</li>
+                        <li>- curious</li>
+                        <li>- always learning new stuff</li>
+                     </ul>
+                  </div>
+                  <div id="cons" class="col s12">
+                     <ul>
+                        <li>- perfectionist</li>
+                        <li>- lazy</li>
+                        <p>
+                           ...but being lazy can be good sometimes,
+                           <br>just like Bill Gates mentioned it once:
+                           <br>“I choose a lazy person to do a hard job. Because a lazy person will find an easy way to do it.”
+                        </p>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <!-- pros and cons -->
+            <!-- Skills Modal Trigger -->
+            <div class="skills-trigger wow zoomIn" data-wow-delay="3.5s">
+               <a class="btn-floating btn-large waves-effect waves-light modal-trigger cyan floating" href="#modal-skills"><i class="material-icons">add</i></a>
+            </div>
+            <!-- Skills Modal Trigger -->
+            <!-- Skills Modal Structure -->
+            <div id="modal-skills" class="modal bottom-sheet">
+               <div class="modal-icons modal-content center-align">
+                  <h4 class="thin">Skill Set</h4>
+                  <a class="btn-floating btn-large waves-effect waves-light skills-btn blue" onclick="Materialize.toast('HTML 5', 4000)"><i class="devicons devicons-html5"></i></a>
+                  <a class="btn-floating btn-large waves-effect waves-light skills-btn blue" onclick="Materialize.toast('CSS 3', 4000)"><i class="devicons devicons-css3"></i></a>
+                  <a class="btn-floating btn-large waves-effect waves-light skills-btn blue" onclick="Materialize.toast('Javascript (ES6)', 4000)"><i class="devicons devicons-javascript"></i></a>
+                  <a class="btn-floating btn-large waves-effect waves-light skills-btn black" onclick="Materialize.toast('Terminal', 4000)"><i class="devicons devicons-terminal"></i></a>
+                  <a class="btn-floating btn-large waves-effect waves-light skills-btn black" onclick="Materialize.toast('Git', 4000)"><i class="devicons devicons-git"></i></a>
+                  <a class="btn-floating btn-large waves-effect waves-light skills-btn black" onclick="Materialize.toast('GitHub', 4000)"><i class="devicons devicons-github_badge"></i></a>
+                  <a class="btn-floating btn-large waves-effect waves-light skills-btn orange" onclick="Materialize.toast('Bootstrap 3', 4000)"><i class="devicons devicons-bootstrap"></i></a>
+                  <a class="btn-floating btn-large waves-effect waves-light skills-btn orange" onclick="Materialize.toast('Sass', 4000)"><i class="devicons devicons-sass"></i></a>
+                  <a class="btn-floating btn-large waves-effect waves-light skills-btn orange" onclick="Materialize.toast('jQuery', 4000)"><i class="devicons devicons-jquery"></i></a>
+                  <a class="btn-floating btn-large waves-effect waves-light skills-btn orange" onclick="Materialize.toast('Angular.js', 4000)"><i class="devicons devicons-angular"></i></a>
+                  <a class="btn-floating btn-large waves-effect waves-light skills-btn red" onclick="Materialize.toast('npm', 4000)"><i class="devicons devicons-npm"></i></a>
+                  <a class="btn-floating btn-large waves-effect waves-light skills-btn red" onclick="Materialize.toast('Bower', 4000)"><i class="devicons devicons-bower"></i></a>
+                  <a class="btn-floating btn-large waves-effect waves-light skills-btn red" onclick="Materialize.toast('Yeoman', 4000)"><i class="devicons devicons-yeoman"></i></a>
+                  <a class="btn-floating btn-large waves-effect waves-light skills-btn red" onclick="Materialize.toast('Grunt', 4000)"><i class="devicons devicons-grunt"></i></a>
+                  <a class="btn-floating btn-large waves-effect waves-light skills-btn red" onclick="Materialize.toast('Gulp', 4000)"><i class="devicons devicons-gulp"></i></a>
+                  <a class="btn-floating btn-large waves-effect waves-light skills-btn green" onclick="Materialize.toast('Atom IDE', 4000)"><i class="devicons devicons-atom"></i></a>
+               </div>
+               <div class="modal-footer">
+                  <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">close</a>
+               </div>
+            </div>
+            <!-- Skills modal Structure -->
+         </div>
+         <!-- bio-stuff -->
+      </div>
+      <!-- div stuff -->
+   </div>
+   <!-- container -->
+   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+   <script type="text/javascript" src="js/app.js"></script>
+</body>
+
+</html>

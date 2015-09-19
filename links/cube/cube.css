@@ -1,0 +1,87 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,500,500italic,700,700italic);
+body {
+   background: #F8FFE5;
+}
+.perspective {
+   margin: 0 auto;
+   margin-top: 10rem;
+   /*margin: 0 auto;*/
+   perspective: 76em;
+   perspective-origin: 80% 50px;
+   width: 494px;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 200;
+   color: #fff;
+   text-align: center;
+}
+input {
+   display: none;
+}
+.tab {
+   position: absolute;
+   width: 80px;
+   height: 70px;
+   background: pink;
+   right: 0;
+   line-height: 70px;
+   font-weight: 300;
+}
+.tab:nth-child(1) {
+   top: -5px;
+   background: #06D6A0;
+}
+.tab:nth-child(2) {
+   top: 69px;
+   background: #1B9AAA;
+}
+.tab:nth-child(3) {
+   top: 143px;
+   background: #EF476F;
+}
+.cube {
+   position: relative;
+   margin: 60px auto 0;
+   width: 300px;
+   height: 200px;
+   transform-origin: 0 100px;
+   transform-style: preserve-3d;
+   transition: transform 0.5s ease-in;
+}
+.tab-content {
+   width: 300px;
+   height: 200px;
+   position: absolute;
+}
+.tab-content h1 {
+   font-size: 25px;
+   margin: 75px 0 10px;
+   font-weight: 300;
+}
+.tab-content p {
+   font-size: 12px;
+}
+.tab-content:nth-child(2) {
+   transform: translateZ(100px);
+   background: #1B9AAA;
+}
+.tab-content:nth-child(1) {
+   transform: rotateX(-270deg) translateY(-100px);
+   -ms-transform-origin: top left;
+   transform-origin: top left;
+   background: #06D6A0;
+}
+.tab-content:nth-child(3) {
+   transform: rotateX(-90deg) translateY(100px);
+   -ms-transform-origin: bottom center;
+   transform-origin: bottom center;
+   background: #EF476F;
+}
+#tab-top:checked ~ .cube {
+   transform: rotateX(-90deg);
+}
+#tab-front:checked ~ .cube {
+   transform: rotateX(0deg);
+}
+#tab-bottom:checked ~ .cube {
+   transform: rotateX(90deg);
+}

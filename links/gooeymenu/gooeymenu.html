@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="gooeymenu.css">
+   <title>gooey menu</title>
+</head>
+
+<body>
+
+   <div class="bubbles">
+      <a href="#">
+         <div class="bubble"><i class="fa fa-home"></i></div>
+      </a>
+      <a href="#">
+         <div class="bubble"><i class="fa fa-instagram"></i></div>
+      </a>
+      <a href="#">
+         <div class="bubble"><i class="fa fa-google"></i></div>
+      </a>
+      <a href="#">
+         <div class="bubble"><i class="fa fa-facebook"></i></div>
+      </a>
+      <a href="#">
+         <div class="bubble"><i class="fa fa-twitter"></i></div>
+      </a>
+   </div>
+
+   <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+      <defs>
+         <filter id="goo">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+            <feBlend in="SourceGraphic" in2="goo" />
+         </filter>
+      </defs>
+   </svg>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</body>
+
+</html>
